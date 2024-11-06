@@ -1,0 +1,131 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6A82FB, #FC5C7D);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+
+.chat-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.chat-header p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Chat Body */
+.chat-body {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bot-message {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#user-message {
+    flex: 1;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+}
+
+#send-btn {
+    background-color: #FC5C7D;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#send-btn:hover {
+    background-color: #6A82FB;
+}
+
+/* Media Upload Options */
+.media-options {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.voice-btn, .video-btn {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #6A82FB;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.voice-btn:hover, .video-btn:hover {
+    background-color: #FC5C7D;
+    color: #fff;
+}
+
+input[type="file"] {
+    display: none;
+}
