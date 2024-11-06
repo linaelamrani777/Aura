@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura - Debate Assistant Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Aura Debate Assistant</h1>
+            <p>Your personal guide for debates and arguments</p>
+        </div>
+        <div class="chat-body">
+            <div class="message-box">
+                <div class="bot-message">
+                    <p>Hi, I'm Aura! Ready to help you practice your debating skills.</p>
+                </div>
+            </div>
+
+            <!-- User Message Input Section -->
+            <div class="input-area">
+                <input type="text" id="user-message" placeholder="Type your message..." autofocus>
+                <button id="send-btn">Send</button>
+            </div>
+
+            <!-- Voice & Video Upload Section -->
+            <div class="media-options">
+                <label for="voice-input" class="voice-btn">🎙️ Send Voice Message</label>
+                <input type="file" id="voice-input" accept="audio/*">
+                <label for="video-input" class="video-btn">🎥 Upload Video</label>
+                <input type="file" id="video-input" accept="video/*">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
