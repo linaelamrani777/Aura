@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', serif;
     background: linear-gradient(135deg, #6A82FB, #FC5C7D);
     color: #fff;
     display: flex;
@@ -34,16 +34,22 @@ body {
     text-align: center;
 }
 
-.chat-header h1 {
-    font-size: 2rem;
+/* Aura Title */
+.aura-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
 }
 
-.chat-header p {
-    font-size: 1rem;
-    color: #ddd;
+/* Debate Assistant Title */
+.debate-assistant-title {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 10px;
 }
 
 /* Chat Body */
