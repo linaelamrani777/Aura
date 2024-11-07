@@ -1,41 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aura - Debate Assistant Chatbot</title>
-    <!-- Link to Google Fonts for Dancing Script and Times New Roman -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Times+New+Roman&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="chat-container">
-        <div class="chat-header">
-            <h1 class="aura-title">Aura</h1>
-            <h2 class="debate-assistant-title">Debate Assistant</h2>
-            <p>Your personal guide for debates and arguments</p>
-        </div>
-        <div class="chat-body">
-            <div class="message-box">
-                <div class="bot-message">
-                    <p>Hi, I'm Aura! Ready to help you practice your debating skills.</p>
-                </div>
-            </div>
-
-            <!-- User Message Input Section -->
-            <div class="input-area">
-                <input type="text" id="user-message" placeholder="Type your message..." autofocus>
-                <button id="send-btn">Send</button>
-            </div>
-
-            <!-- Voice & Video Upload Section -->
-            <div class="media-options">
-                <label for="voice-input" class="voice-btn">🎙️ Send Voice Message</label>
-                <input type="file" id="voice-input" accept="audio/*">
-                <label for="video-input" class="video-btn">🎥 Upload Video</label>
-                <input type="file" id="video-input" accept="video/*">
-            </div>
-        </div>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Aura</div>
+      <div class="user-avatar">
+        <!-- Add user avatar image here -->
+      </div>
     </div>
+    <div class="main">
+      <div class="prompt">How can I help you with public speaking today?</div>
+      <div class="chat-area">
+        <div class="messages-container">
+          <!-- Messages will appear here -->
+        </div>
+        <div class="chat-input-container">
+          <input type="text" id="user-input" placeholder="Type your message..." />
+          <div class="input-actions">
+            <button class="action-btn" title="Record Voice">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+            </button>
+            <label class="action-btn" title="Upload Video">
+              <input type="file" id="video-upload" accept="video/*">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2" ry="2"/></svg>
+            </label>
+            <button class="action-btn" title="Send Message" id="send-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="options">
+        <div class="option">
+          <div class="option-title">Public Speaking FAQ</div>
+          <div class="option-description">Get answers to common questions</div>
+        </div>
+        <div class="option">
+          <div class="option-title">Practice Prompts</div>
+          <div class="option-description">Improve your public speaking skills</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const messagesContainer = document.querySelector('.messages-container');
+      const input = document.querySelector('#user-input');
+      const sendButton = document.querySelector('#send-btn');
+
+      function sendMessage() {
+        const message = input.value.trim();
+        if (message) {
+          const messageElement = document.createElement('div');
+          messageElement.className = 'message user-message';
+          messageElement.innerHTML = `
+            <div class="message-content">${message}</div>
+          `;
+          messagesContainer.appendChild(messageElement);
+          input.value = '';
+          messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+      }
+
+      // Send message on button click
+      sendButton.addEventListener('click', sendMessage);
+
+      // Send message on Enter key
+      input.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          sendMessage();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
