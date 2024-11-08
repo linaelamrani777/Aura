@@ -41,10 +41,29 @@ Aura presents a unique opportunity to transform public speaking improvement thro
 - **Personalized Learning**
 
 ## 🎯 Targeted SDGs
-- **SDG 4: Quality Education**: Aura contributes to quality education by building essential communication skills.
-- **SDG 8: Decent Work and Economic Growth**: Improved communication skills can enhance job and economic prospects.
-- **SDG 9: Industry, Innovation, and Infrastructure**: Aura uses innovative technology for public speaking development.
-- **SDG 17: Partnerships for the Goals**: Aura fosters collaboration among individuals, researchers, and organizations.
+### **SDG 4: Quality Education**:
+<img src="./sdg4.gif" alt="Logo" width="100" height="100">
+
+ Aura contributes to quality education by building essential communication skills.
+
+  
+### **SDG 8: Decent Work and Economic Growth**:
+<img src="./sdg8.gif" alt="Logo" width="100" height="100">
+
+ Improved communication skills can enhance job and economic prospects.
+
+
+### **SDG 9: Industry, Innovation, and Infrastructure**:
+<img src="./sdg9.gif" alt="Logo" width="100" height="100">
+
+ Aura uses innovative technology for public speaking development.
+
+  
+### **SDG 17: Partnerships for the Goals**: 
+<img src="./sdg17.gif" alt="Logo" width="100" height="100">
+
+ Aura fosters collaboration among individuals, researchers, and organizations.
+
 
 ## 🚀 Into The Future
 ### 🌈 What Will Aura Change?
