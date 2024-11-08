@@ -26,7 +26,7 @@ Our vision for Aura includes the addition of a **Debate Mode**. This feature wou
 ## ❓ What Problem Does It Solve?
 Aura combines AI feedback and public speaking practice to address general speaking challenges. It helps users build confidence, clarity, and effectiveness in communication.
 
-## 💼 Benefits
+### 🌍 How Does Aura Benefit People?
 - **For Users**: Access to personalized feedback, resources, and a community to enhance public speaking abilities.
 - **For Researchers**: Data and insights into factors influencing public speaking development for further study.
 - **For the Public**: Awareness of public speaking’s importance, supporting the Aura platform's growth.
@@ -69,8 +69,6 @@ Aura presents a unique opportunity to transform public speaking improvement thro
 ### 🌈 What Will Aura Change?
 Aura aims to transform how people improve their public speaking skills, empowering them to become confident, articulate, and effective communicators.
 
-### 🌍 How Does Aura Benefit People?
-Through its platform, Aura enables users to overcome speaking fears, develop communication abilities, and unlock new opportunities.
 
 ## 🔗 Project Links
 - [Website]
